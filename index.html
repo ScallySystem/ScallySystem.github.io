@@ -1,40 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en"><!--  --><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>S c a l l y  S y s t e m</title> 
+	<meta name="description" content="ScallySystem">
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="shortcut icon" href="2.ico" type="image/ico">
+<script async src="js/tag.js"></script><script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "../mc.yandex.ru/metrika/tag.js", "ym");
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beta test</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+   ym(54610852, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        ecommerce:"dataLayer"
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/54610852" style="position:absolute; left:-9999px;" alt></div></noscript>
+  </head>
+  <body>
+    <div class="preloader">
+      <div style="PreloaderStyle" class="preloader-circle"></div>
+    </div>
 
-<body>
-  <div id="particles-js"></div>
+    <div id="asif-page">
+      <div class="wrapper">
+        <div class="background">
+          <video preload muted ref="background-video" id="background-video">
+            <source src="media/123.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="asif-page-copyright" :style="CopyRightStyle">
+          {{ copyrightText }}
+        </div>
 
-  <div class="content">
-    <header>
-      <div class="header-content">
-        <h1>Sublime product</h1>
-        <a href="https://discord.gg/" class="gradient-button">Discord</a>
-
-      </div>
-    </header>
-
-    <div class="main-content">
-      <h2><br><span>Sublime</span> Spoofer</h2>
-      <p>Лучший программа для скрытия читов по доступной цене.</p>
-      <canvas id="canvas" width="2200" height="2000"></canvas>
-      <canvas id="canvas1" width="2200" height="2000"></canvas>
-
-      <div class="buttons">
-        <a href="https://discord.com/" class="gradient-button">Приобрести</a>
-        <a href="" class="simple-button">Пробная версия</a>
+        <div class="container">
+          <div class="asif-page-wrapper">
+            <div class="asif-page-info">
+              <div class="asif-page-info-play" :class=" { 'is-playing': isPlaying }" :style="PlayButtonStyle" @click="startPlay">
+                Start
+              </div>
+              <div class="asif-page-info-logo"></div>
+              <div ref="title" :class="{ 'title-visible': titleVisible }" class="asif-page-info-title" :style="TitleStyle">
+                {{ title }}
+              </div>
+              <div class="asif-page-info-social" :class="{ 'social-visible': titleVisible }">
+                <a v-for="(item, key) in social" :href="getSocialLink(key, item)" target="_blank" class="asif-page-info-social-item">
+                  <span :style="SocialStyle" :class="'icon-' + key"></span>
+                </a>
+              </div>
+            </div> 
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+<!-- <script>
+document.oncontextmenu = function (e) { e.preventDefault(); return false; }
+</script> -->
+  <script src="js/block.js"></script>
+  <script src="js/window.js"></script>
+	<script src="js/vue.js"></script>
+  <script src="js/config.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+  
 
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="script.js"></script>
-</body>
 
-</html>
+
+</body><!--  --></html>
